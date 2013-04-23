@@ -1,0 +1,44 @@
+<phpunit 
+    bootstrap="./bootstrap.php"
+    color="true"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    processIsolation="failure"
+    stopOnFailure="failure"
+    syntaxCheck="false"
+>
+    <testsuites>
+        <testsuite name="Test">
+            <directory>./</directory>
+        </testsuite>
+    </testsuites>
+    <groups>
+        <include>
+            <group>sms</group>
+            <group>addons</group>
+            <group>broadcast</group>
+            <group>conference</group>
+            <group>cost</group>
+            <group>findme</group>
+            <group>general</group>
+            <group>group</group>
+            <group>locator</group>
+            <group>numbers</group>
+            <group>recording</group>
+            <group>registerednumbers</group>
+            <group>report</group>
+            <group>routing</group>
+            <group>survo</group>
+            <group>transcription</group>
+            <group>verifymenow</group>
+            <group>voicemail</group>
+            <group>ctc</group>
+            <group>ctf</group>
+            <group>ctfl</group>
+            <group>ctvr</group>
+            <group>ctvm</group>
+            <group>cts</group>
+        </include>
+    </groups>
+</phpunit>

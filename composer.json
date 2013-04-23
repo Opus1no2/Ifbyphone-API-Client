@@ -1,0 +1,22 @@
+{
+    "name": "ifbyphone/api-client",
+    "description": "Ifbyphone API Client",
+    "authors": [
+        {
+            "name": "Travis Tillotson",
+            "email": "ttillotson@ifbyphone.com"
+        }
+    ],
+    "require": {
+
+    },
+    "required": {
+        "php": ">=5.3.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "Ifbyphone": "src/",
+            "Ifbyphone\\Test": "test"
+        }
+    }
+}
