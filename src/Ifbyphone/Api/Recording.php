@@ -145,4 +145,18 @@ class Recording extends Base
         $this->_param['path'] = Util::validUrl($path);
         return $this;
     }
+    
+    /**
+     *
+     * Set format | 'wav' or 'mp3'
+     *
+     * @param string $format
+     *
+     * @return object
+     */
+    public function setFormat($foramt)
+    {
+        $this->_param['format'] = $format;
+        return $this;
+    }
 }

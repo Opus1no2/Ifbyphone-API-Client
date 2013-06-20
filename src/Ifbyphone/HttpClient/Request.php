@@ -47,13 +47,16 @@ class Request
     protected function _processResult($result)
     {   
         $xml = simplexml_load_string($result);
-        if ($xml->result == 'failed') {
-            $failure = $xml->result_description;
-            throw new \RunTimeException(sprintf(
-                'Request failure: [%s]', $failure
-            ));
-        }
+        
+        if (isset($xml->result)) {
+            if ($xml->result == 'failed') {
+                $failure = $xml->result_description;
+                throw new \RunTimeException(sprintf(
+                    'Request failure: [%s]', $failure
+                ));
+            }
         return $xml;
+        }
     }
     
     /**

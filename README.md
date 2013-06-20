@@ -17,8 +17,10 @@ $ curl -s https://getcomposer.org/installer | php
 Next, add a composer.json file containing the following:
 
 ```js
-"require": {
-    "ifbyphone/api-client": "dev-master"
+}
+    "require": {
+        "ifbyphone/api-client": "dev-master"
+    }
 }
 ```
 
@@ -42,7 +44,7 @@ $client = new Client('YOUR API KEY');
 $client->api('sms')->(array(
     'to' => 1112223333,
     'from => '4445556666,
-    'message => 'Test message!'
+    'message' => 'Test message!'
 ));
 
 ```
