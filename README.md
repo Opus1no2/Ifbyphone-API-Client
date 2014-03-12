@@ -48,7 +48,7 @@ $client->api('sms')->(array(
 ));
 
 ```
-Method changing is also supported:
+Method chaining is also supported:
 
 ```php
 <?php
